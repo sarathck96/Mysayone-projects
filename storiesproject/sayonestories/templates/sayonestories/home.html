@@ -1,0 +1,74 @@
+
+{% extends 'base_layout.html' %}
+{% load static %}
+{% block content %}
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-12">
+            <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+  <!-- Brand/logo -->
+  <a class="navbar-brand" href="#">
+    <img src="{% static 'images/images.png' %}" alt="Sayone" style="width:70px;height:50px;">
+  </a>
+
+  <!-- Links -->
+  <ul class="navbar-nav">
+    <li class="nav-item">
+      <a class="nav-link" href="{% url 'login' %}">SIGN IN</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="{% url 'userregister' %}">REGISTER</a>
+    </li>
+
+  </ul>
+</nav>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <center><b>Welcome to Sayone Stories . Start Sharing </b></center>
+            <br>
+        </div>
+    </div>
+    <div class="row">
+            <div class="col-3">
+            <div class="card" style="width:300px;height:340px;">
+    <img class="card-img-top" src="{% static 'images/event.JPG' %}" alt="Card image" style="width:100%;height:230px;">
+    <div class="card-body">
+      <h4 class="card-title">EVENTS</h4>
+      <p class="card-text">Share Details of the Events Outside</p>
+
+    </div>
+            </div>
+
+
+        </div>
+
+        <div class="col-3">
+          <div class="card" style="width:300px;">
+  <img class="card-img-top" src="{% static 'images/technology.jpeg' %}" alt="Card image" style="width:100%">
+  <div class="card-body">
+    <h4 class="card-title">Technology Blogs</h4>
+    <p class="card-text">Share your knowledge Regarding Technologies</p>
+
+  </div>
+          </div>
+
+
+      </div>
+      <div class="col-3">
+        <div class="card" style="width:300px">
+<img class="card-img-top" src="{% static 'images/holiday.jpg' %}" alt="Card image" style="width:100%">
+<div class="card-body">
+  <h4 class="card-title">Holiday pics</h4>
+  <p class="card-text">Share your Holiday pics</p>
+
+</div>
+        </div>
+
+
+    </div>
+    </div>
+
+</div>
+{% endblock %}
